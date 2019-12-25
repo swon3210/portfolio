@@ -99,11 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -120,8 +116,8 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
-		color: rgba(255, 255, 255, 0.65);
+		background-color: rgba(129, 121, 132, 0.2);
+		color: white;
 	}
 
 	body, input, select, textarea {
@@ -3078,11 +3074,13 @@ input, select, textarea {
 
 		#header h1 {
 			margin: 0 0 0.25em 0;
+			color: #636363;
 		}
 
 		#header p {
 			font-size: 1.25em;
 			letter-spacing: -0.025em;
+			color: #636363;
 		}
 
 		#header.alt {

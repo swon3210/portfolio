@@ -1,0 +1,80 @@
+.skills {
+  margin-bottom: 120px;
+}
+
+.skills:last-of-type {
+  margin-bottom: 0;
+}
+
+.skill-icon {
+  font-size: 150px;
+}
+
+.skill-image {
+  width: 125px;
+  height: 125px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.project {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.project-image {
+  min-width: 250px;
+  max-height: 350px;
+  border-radius: 10px;
+  margin-right: 50px;
+  object-fit: contain;
+}
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.project-info > p {
+  text-align: start;
+}
+
+.project-buttons {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.project-buttons > li {
+  padding: 0;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 736px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project-image {
+    margin: 0;
+    max-height: 300px;
+  }
+
+  .project-info {
+    align-items: center;
+  }
+
+  .project-info > p {
+    text-align: center;
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

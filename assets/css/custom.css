@@ -81,6 +81,11 @@
 
 .nodejs {
   width: 150px;
+  height: 125px;
+}
+
+.mysql {
+  height: 150px;
 }
 
 /* 

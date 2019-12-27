@@ -78,3 +78,29 @@
   flex-direction: column;
   align-items: center;
 }
+
+.nodejs {
+  width: 150px;
+}
+
+/* 
+.icon-html {
+  color: RGB(223, 75, 37);
+}
+
+
+.icon-css {
+  color: RGB(37, 75, 222);
+}
+
+.icon-javascript {
+  color: RGB(232, 212, 77);
+}
+
+.icon-vuejs {
+  color: RGB(223, 75, 37);
+}
+
+.icon- {
+  color: RGB(223, 75, 37);
+} */

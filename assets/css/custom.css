@@ -25,14 +25,16 @@
 }
 
 .project-image {
-  min-width: 250px;
+  max-width: 600px;
   max-height: 350px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-right: 50px;
   object-fit: contain;
+
 }
 .project-info {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -54,13 +56,15 @@
   margin-right: 10px;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 1076px) {
   .project {
     flex-direction: column;
+    align-items: center;
   }
 
   .project-image {
     margin: 0;
+    margin-bottom: 20px;
     max-height: 300px;
   }
 
@@ -88,24 +92,28 @@
   height: 150px;
 }
 
-/* 
-.icon-html {
-  color: RGB(223, 75, 37);
+.tag-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
 }
 
-
-.icon-css {
-  color: RGB(37, 75, 222);
+.tag-label {
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 14px;
 }
 
-.icon-javascript {
-  color: RGB(232, 212, 77);
+.tag {
+  background-color: rgba(192, 196, 251);
+  color: white;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 14px;
 }
-
-.icon-vuejs {
-  color: RGB(223, 75, 37);
-}
-
-.icon- {
-  color: RGB(223, 75, 37);
-} */

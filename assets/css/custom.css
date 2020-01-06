@@ -22,10 +22,11 @@
 .project {
   display: flex;
   margin-bottom: 50px;
+  overflow: hidden;
 }
 
 .project-image {
-  max-width: 600px;
+  width: 500px;
   max-height: 350px;
   border-radius: 5px;
   margin-right: 50px;

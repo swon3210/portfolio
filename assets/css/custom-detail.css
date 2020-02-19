@@ -1,0 +1,35 @@
+/* 프로젝트 설명 */
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-image {
+  height: 300px;
+  overflow: hidden;
+}
+
+.process-block {
+  display: flex;
+  align-items: center;
+}
+
+.block-image {
+  width: 219px !important;
+  height: 219px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .block-image {
+    width: 150px !important;
+    height: 150px;
+  }
+  
+}
+
+.link-block {
+  display: flex;
+  justify-content: space-around;
+}

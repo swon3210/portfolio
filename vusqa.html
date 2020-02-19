@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Vusqa</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/custom-detail.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <h1>Vusqa</h1>
+        <p>Vue.js</p>
+      </header>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Content -->
+        <section id="content" class="main">
+          <span class="image main"
+            ><img src="images/vusqa-header.png" alt=""
+          /></span>
+
+          <h2>외주 내용</h2>
+          <p>
+            처음에 의뢰 받았던 것은 프론트엔드 개발이 아니라 biobiochile 라는 칠레의 언론사 사이트의 기사 데이터들을 크롤링 하는 작업이었습니다. 제게 외주를 맡긴 분께서는 칠레 언론사의 기사들을 한데 모아 사람들이 원하는 카테고리 별로 뉴스를 제공하는 통합 서비스를 만들기를 원했고, 후에 프론트엔드 개발과 파이어베이스 백엔드 구축 작업을 제게 의뢰하셨습니다.
+          </p>
+
+          <h2>외주 결과물</h2>
+          <p>
+						간단한 데모 어플리케이션 시연을 위한 두개의 언론사 기사 데이터 크롤링 함수를 Google Cloud Function 에 등록하여, HTTP 요청만으로 크롤링이 이루어질 수 있게 해두었습니다. 현재는 의뢰자분께서 사업 자체를 보류하시면서 GCP 계정 또한 폐쇄되었으므로 접근할 수 없는 상태입니다. 데모를 위한 웹사이트 배포도 일부 완료되었으나, 운영되고 있는 상황은 아닙니다.
+          </p>
+          <hr />
+
+          <h2>개발 과정</h2>
+          <div class="text-block">
+            <h3>크롤러 GCF 등록 및 파이어베이스 백엔드 구축</h3>
+            <p class="process-block">
+              <span class="image left"
+                ><a
+                  target="blank"
+                  href="https://quizzical-mcnulty-6a133d.netlify.com/?path=/docs/readme-introduction--page"
+                  ><img
+                    class="block-image"
+                    src="images/cloud-functions.png"
+                    alt=""/></a
+              ></span>
+              크롤링 할때 사용한 언어는 자바스크립트(Node.js)였고, Puppeteer.js 와 cheerio.js 패키지를 활용했습니다. 두 언론사 웹사이트의 전체 기사 목록 데이터를 가져오는 크롤링 함수를 등록했는데, 그 중 하나는 기사 목록 데이터 뿐만 아니라 언론사가 지닌 기사들의 전체 내용까지 크롤링 하는 함수를 테스트 목적으로 개발했습니다. 크롤링 함수는 크롤링과 동시에 기사 데이터들이 파이어스토어 데이터베이스에 담기도록 되어 있습니다.
+              <p class="link-block">
+                <a href="https://github.com/swon3210/vusqua-crawler">Vusqa-Crawler 깃허브</a>
+              </p>
+            </p>
+
+            
+          </div>
+
+          <div class="text-block">
+            <h3>퍼블리싱 / 파이어베이스 백엔드 연결</h3>
+            <p class="process-block">
+              초기에는 빠른 작업을 위해 Bootstrap 프레임워크를 이용한 퍼블리싱을 진행하였으나 렌더링 성능 개선 요구에 의해 CSS 프레임워크 없이 SASS 를 이용해서 퍼블리싱을 진행하였습니다. 디자이너가 구축하고 있던 디자인 시스템을 구현하기 위해 Storybook 을 도입하여 컴포넌트 UI 또한 문서화 작업을 진행하였습니다.
+              <span class="image right"
+                ><img class="block-image" src="images/firebase.jpg" alt=""
+              /></span>
+              <p class="link-block">
+								<a href="https://github.com/swon3210/vusqa-frontend-v1">Vusqa 초기 퍼블리싱(Bootstrap) 깃허브</a>
+								<a href="https://github.com/swon3210/vusqa-frontend-v2">Vusqa 후기 퍼블리싱(SASS) 깃허브</a>
+							<a href="https://agitated-northcutt-0787ac.netlify.com/?path=/story/components-pages--headline-page">Vusqu 스토리북</a>
+              </p>
+            </p>
+          </div>
+        </section>
+      </div>
+      <footer id="footer"></footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
